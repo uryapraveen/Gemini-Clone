@@ -1,0 +1,217 @@
+.Main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-left: 12px;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;            
+  padding: 10px 16px;
+}
+
+.heading p{
+  font-size: 24px;
+  margin-top: -20px;
+  margin-left: -20px;
+}
+
+.heading img {
+  width: 30px;       
+  height: 30px;
+  border-radius: 50%; 
+  object-fit: cover;  
+  cursor: pointer;    
+  transition: transform 0.2s ease;
+}
+
+.heading img:hover {
+  transform: scale(1.1); 
+}
+
+.main-container{
+    max-width: 900px;
+    margin: auto;
+}
+
+.main-container .greet{
+   margin: 50px 0px;
+   font-size: 56px;
+   color: #c4c7c5;
+   padding: 20px;
+   font-weight: 500;
+}
+
+.main-container .greet span{
+    background: -webkit-linear-gradient(16deg,#4b90ff,#ff5546);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-container .cards{
+  display: grid;
+  grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.main-container .cards .card{
+    height: 110px;
+    padding: 15px;
+    background-color: #f0f4f9;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.main-container .cards .card img{
+   height: 30px;
+   width: 30px;
+   margin-left: 90px;
+}
+
+.main-container .cards .card p{
+    color: #585858;
+    font-size: 17px;
+}
+
+.Text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.Search-Box {
+  display: flex;
+  align-items: center;
+  background-color: #f1f3f4;   /* Gemini-like light gray background */
+  border-radius: 28px;
+  padding: 10px 16px;
+  flex: 1;
+  margin-bottom: 10px;
+}
+
+.Search-Box textarea {
+  width: 500px;             /* fixed width */
+  min-height: 10px;
+  height: 30px;         
+  max-height: 200px;        
+  resize: none;             
+  overflow-y: auto;         
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  color: #202124;
+  line-height: 1.5;
+}
+
+.Text > div:nth-of-type(2) {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  margin-top: -42px; 
+  margin-right: 18px;
+}
+
+.Text > div:nth-of-type(2) img {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+
+.Text > div:nth-of-type(2) img:hover {
+  opacity: 1;
+}
+
+.bottom-info {
+  margin-top: 8px;
+  text-align: center;
+}
+
+.bottom-info p {
+  font-size: 12px;
+  color: #5f6368;
+  line-height: 1.4;
+}
+
+.result{
+  padding: 0px 5%;
+  max-height:70vh;
+  width: 900px;
+  overflow-y: scroll;
+}
+
+.result::-webkit-scrollbar{
+  display: none;
+}
+
+.result-title{
+  margin: 40px 0px;
+  display: flex;
+  align-items: center;
+  gap:20px;
+}
+
+.result img{
+  width: 30px;
+  border-radius: 50%;
+}
+
+.result-data{
+  display: flex;
+  align-items: start;
+  gap: 20px;
+}
+
+/* ---------------- Loader Circle ---------------- */
+.circle-loader {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gemini-logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border: 2px solid transparent;
+  border-top: 2px solid #4b90ff;
+  border-right: 2px solid #ff5546;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  position: absolute;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.result-data p{
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.8;
+}

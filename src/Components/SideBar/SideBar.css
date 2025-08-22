@@ -1,0 +1,125 @@
+/* Sidebar full height */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: rgb(240, 244, 249);
+    width: 272px;
+    box-sizing: border-box;
+}
+/* Top section styles (your original) */
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;       
+    padding: 20px 20px;
+    box-sizing: border-box;
+}
+
+.top .menu {
+    margin-bottom: 20px;
+    width: 272px;
+}
+
+.top .menu img {
+    height: 25px;
+    width: 30px;
+    margin-left: 0px;
+    cursor: pointer;
+}
+
+.top .menu .Search {
+    margin-left: 170px;
+}
+
+.top .newchat {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 25px;
+    margin-bottom: 60px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.top .newchat img {
+    height: 30px;
+    width: 30px;
+}
+
+.top .newchat p {
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    margin: 0;
+}
+
+.top .recent > p {
+    padding-left: 10px !important;
+}
+.recent p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 520; 
+    color: rgb(118, 120, 123); 
+    letter-spacing: 0.2px; 
+}
+
+.recent .Questions {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(60, 64, 67);
+    margin-top: 30px;
+    letter-spacing: 0.2px;
+    line-height: 1.4;
+    display: inline-block;
+    padding: 6px 85px;
+    border-radius: 12px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.recent .Questions:hover {
+    background-color: rgb(232, 234, 237);
+    cursor: pointer;
+}
+
+.recent .Questions:active {
+    color: blue;
+}
+
+.recent .Questions.active {
+    background-color: rgb(220, 230, 255);
+    color: blue;
+}
+
+/* Bottom section pinned */
+.bottom {
+    
+    margin-top: auto;
+    padding: 30px 20px;
+    background-color: rgb(240, 244, 249);
+}
+
+.bottom .Settings {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.bottom .Settings img {
+    height: 35px;
+    width: 30px;
+    margin-bottom: 4px;
+}
+
+.bottom .Settings p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(60, 64, 67);
+    margin: 100;
+}
