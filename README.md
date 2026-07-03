@@ -2,6 +2,8 @@
 
 A frontend clone of Google Gemini's chat interface, built with React and powered by the actual Google Generative AI API — so it's not just a UI mockup, it returns real model responses.
 
+**🔗 Live demo:** [gemini-clone-seven-rust.vercel.app](https://gemini-clone-seven-rust.vercel.app/)
+
 ## Features
 - Chat-style interface modeled on Gemini's UI
 - Live responses via the `@google/generative-ai` SDK
