@@ -5,7 +5,7 @@ import {
   HarmBlockThreshold,
 } from "@google/generative-ai";
 
-const MODEL_NAME = "gemini-1.5-flash"; // ✅ use latest stable model
+const MODEL_NAME = "gemini-2.5-flash"; // ✅ use latest stable model
 const API_KEY = "AIzaSyB43QVvPzoVD9eyX3-88kPccdrVpHu1ZvE"; // ⚠️ never expose directly in frontend
 
 async function runChat(prompt) {
